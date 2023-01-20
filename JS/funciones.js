@@ -66,3 +66,10 @@ switch (URLPagina) {
 </nav>`;
 
 document.getElementById("barraNavegacion").innerHTML = barra;
+
+function fechaFormatoMX(date){
+    const [day, month, year] = date.split('-');
+    return [year, month, day].join('/');
+  }
+  
+ 
