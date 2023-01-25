@@ -14,7 +14,7 @@ let series = `<a class="nav-link" href="series.html">Series</a>`;
 let peliculasPopulares = `<a class="nav-link" href="peliculasPopulares.html">Peliculas Populares</a>`;
 let seriesPopulares = `<a class="nav-link" href="seriesPopulares.html">Series Populares</a>`;
 
-console.log(URLPagina);
+
 
 switch (URLPagina) {
     case 'index.html':
@@ -73,6 +73,8 @@ function fechaFormatoMX(date){
   }
   
  function dibujarTarjetas(url,type){
+
+  console.log(url);
  
   fetch(url)
 .then(async(resp) => {
